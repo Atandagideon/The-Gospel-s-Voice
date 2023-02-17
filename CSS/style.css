@@ -1,0 +1,237 @@
+body{
+	background-color: whitesmoke;
+	margin: 0;
+	font-family: 'Kanit', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.8;
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.header{
+	margin-bottom: 25px;
+}
+
+.header h2{
+	font-family: 'Sofia', georgia;
+	font-size: 18px;
+	width: 55px;
+	font-weight: bold;
+	margin-left: 50px;
+	text-algn: center;
+	padding: 5px;
+	border: 1px solid #121d6e;
+}
+
+.main{
+	width: 100%;
+	margin-to: 25px;
+	background-color: #1c92d2;
+}
+
+.about-tgv{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f2fcfe;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.about-tgv p{
+	width: 100%;
+	text-align: justify;
+	padding: 5px;
+	color: #555;
+	margin-bottom: 40px;
+}
+
+.about-tgv img{
+	paddin: 5px;
+	flot: right;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	border-top: 5px solid #1c92d2;
+	border-bottom: 5px solid #f2fcfe;
+	bottom: -40px;
+	margin-left: -50px	;
+}
+
+.blogs h2{
+	text-align: center;
+	color: #121d6e;
+}
+
+.content{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f2fcfe;
+}
+
+.content img{
+	width: 35%;
+	border-radius: 3px;
+	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content .details{
+	width: 60%;
+	float: right;
+	color: #121d6e;
+}
+
+.content h3{
+	font-size: 14px;
+}
+
+.content h4{
+	font-size: 12.5px;
+}
+
+.content h5{
+	font-size: 12px;
+}
+
+.content button{
+	margin-bottom: 10px;
+	background-color: #1c92d2;
+	color: #f2fcfe;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 90%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content h3{
+	font-size: 30px !important;
+	font-weight: bold;
+	color: #f2fcfe;
+}
+
+.overlay p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+  margin-left: 10%;
+  text-align: justify;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: none;
+}
+
+textarea{
+	width: 250px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: none;
+	display: none;
+}
+
+.contact a{
+	width: 300px;
+	text-decoration: none;
+	background-color: white;
+	text-align: center;
+	color: blue;
+	padding: 3px 50px;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+footer{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px	;
+}
+
+/*media queries*/
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*
+@media only screen and (min-width: 500px ) {
+	.content img{
+		width: 150px;
+		margin-right: 10px;
+	}
+
+	.content .details{
+		margin-lef: 5px;
+	}
+}*/
+
+@media only screen and (min-width: 640px ) {
+	.about-tgv img{
+		width: 100px;
+		height: 100px;
+	}
+
+	.content h3, .content h4, .content h5, .content button{
+		margin-top: 10px;
+		font-size: larger;
+	}
+}
