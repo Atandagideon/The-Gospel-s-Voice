@@ -79,6 +79,7 @@ body{
 	border-radius: 5px;
 	padding: 5px;
 	background-color: #f2fcfe;
+	min-height: 110px;
 }
 
 .content img{
@@ -95,18 +96,21 @@ body{
 
 .content h3{
 	font-size: 14px;
+	margin: 5px;
 }
 
 .content h4{
 	font-size: 12.5px;
+	margin: 5px;
 }
 
 .content h5{
 	font-size: 12px;
+	margin: 5px;
 }
 
 .content button{
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	background-color: #1c92d2;
 	color: #f2fcfe;
 	border: none;
@@ -231,7 +235,11 @@ footer{
 	}
 
 	.content h3, .content h4, .content h5, .content button{
-		margin-top: 10px;
+		margin-top: 6px;
 		font-size: larger;
+	}
+
+	.content{
+		height: 150px;
 	}
 }
